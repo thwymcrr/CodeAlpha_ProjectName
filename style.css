@@ -23,9 +23,9 @@ body {
 /* Calculator container */
 
 .container {
-    width: 320px;
+    width: 360px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 25px;
 
     background-color: #1c1c1c;
 
@@ -41,7 +41,7 @@ body {
 
 .display {
     width: 100%;
-    min-height: 120px;
+    min-height: 130px;
 
     text-align: right;
 
@@ -49,7 +49,7 @@ body {
 
     padding: 15px 10px;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     display: flex;
     flex-direction: column;
@@ -95,27 +95,23 @@ body {
 
 .row {
     display: flex;
-
     justify-content: space-between;
-
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 
 /* Buttons */
 
 .button {
-    width: 62px;
-    height: 62px;
+    width: 68px;
+    height: 68px;
 
     border-radius: 50%;
-
     border: none;
 
     font-size: 22px;
 
     background-color: #333333;
-
     color: white;
 
     cursor: pointer;
@@ -131,35 +127,156 @@ body {
 }
 
 
-/* Hover effect */
+/* Hover */
 
 .button:hover {
     opacity: 0.8;
 }
 
 
-/* Click effect */
+/* Click */
 
 .button:active {
     transform: scale(0.90);
 }
 
 
-/* Responsive design */
+/* ================================= */
+/* TABLET */
+/* 401px - 768px */
+/* ================================= */
 
-@media (max-width: 400px) {
+@media (min-width: 401px) and (max-width: 768px) {
 
     .container {
-        width: 90%;
-        padding: 15px;
+        width: 380px;
+        padding: 25px;
+        margin-top: 50px;
     }
 
     .button {
-        width: 58px;
-        height: 58px;
+        width: 72px;
+        height: 72px;
+        font-size: 23px;
+    }
+
+    .display {
+        min-height: 140px;
     }
 
     .result {
-        font-size: 40px;
+        font-size: 48px;
     }
+
+}
+
+
+/* ================================= */
+/* DESKTOP */
+/* 769px and above */
+/* ================================= */
+
+@media (min-width: 769px) {
+
+    .container {
+        width: 400px;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .button {
+        width: 75px;
+        height: 75px;
+        font-size: 24px;
+    }
+
+    .display {
+        min-height: 150px;
+        padding: 20px 15px;
+    }
+
+    .expression {
+        font-size: 22px;
+    }
+
+    .result {
+        font-size: 52px;
+    }
+
+}
+
+
+/* ================================= */
+/* SMALL PHONES */
+/* 400px and below */
+/* ================================= */
+
+@media (max-width: 400px) {
+
+    .text-center {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .container {
+        width: 94%;
+        padding: 15px;
+        margin: 25px auto;
+    }
+
+    .display {
+        min-height: 115px;
+        padding: 12px 8px;
+        margin-bottom: 15px;
+    }
+
+    .expression {
+        font-size: 17px;
+        min-height: 25px;
+    }
+
+    .result {
+        font-size: 38px;
+        min-height: 50px;
+    }
+
+    .row {
+        margin-bottom: 8px;
+    }
+
+    .button {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+}
+
+
+/* ================================= */
+/* VERY SMALL PHONES */
+/* 350px and below */
+/* ================================= */
+
+@media (max-width: 350px) {
+
+    .container {
+        width: 96%;
+        padding: 10px;
+    }
+
+    .button {
+        width: 54px;
+        height: 54px;
+        font-size: 18px;
+    }
+
+    .display {
+        min-height: 105px;
+    }
+
+    .result {
+        font-size: 34px;
+    }
+
 }
