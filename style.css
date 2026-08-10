@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 320px;
+    margin: auto;
+}
+
+.display {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 45px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.button {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+/* Orange operator buttons */
+.row .button:last-child {
+    background-color: orange;
+}
+
+/* Button when mouse is over it */
+.button:hover {
+    opacity: 0.8;
+}
