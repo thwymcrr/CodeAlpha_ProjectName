@@ -20,11 +20,23 @@ body {
 
 .display {
     width: 100%;
-    box-sizing: border-box;
+    min-height: 100px;
     text-align: right;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.expression {
+    font-size: 20px;
+    color: gray;
+    min-height: 30px;
+}
+
+.result {
     font-size: 45px;
-    padding: 20px 10px;
-    margin-bottom: 10px;
+    color: white;
+    min-height: 55px;
 }
 
 .row {
