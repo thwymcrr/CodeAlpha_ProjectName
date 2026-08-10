@@ -7,61 +7,159 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
+    margin: 0;
 }
+
+
+/* Heading */
 
 .text-center {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
+
+
+/* Calculator container */
 
 .container {
     width: 320px;
-    margin: auto;
+    margin: 40px auto;
+    padding: 20px;
+
+    background-color: #1c1c1c;
+
+    border-radius: 20px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+
+
+/* Calculator display */
 
 .display {
     width: 100%;
-    min-height: 100px;
+    min-height: 120px;
+
     text-align: right;
+
     box-sizing: border-box;
-    padding: 10px;
+
+    padding: 15px 10px;
+
     margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background-color: #111111;
+
+    border-radius: 15px;
+
+    overflow: hidden;
 }
+
+
+/* Expression */
 
 .expression {
     font-size: 20px;
-    color: gray;
+    color: #999999;
+
     min-height: 30px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+
+/* Result */
 
 .result {
     font-size: 45px;
     color: white;
+
     min-height: 55px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+
+/* Rows */
 
 .row {
     display: flex;
+
     justify-content: space-between;
-    margin-bottom: 8px;
+
+    margin-bottom: 10px;
 }
+
+
+/* Buttons */
 
 .button {
-    width: 65px;
-    height: 65px;
+    width: 62px;
+    height: 62px;
+
     border-radius: 50%;
+
     border: none;
+
     font-size: 22px;
+
     background-color: #333333;
+
     color: white;
+
     cursor: pointer;
+
+    transition: transform 0.1s, opacity 0.2s;
 }
 
-/* Orange operator buttons */
+
+/* Operator buttons */
+
 .row .button:last-child {
     background-color: orange;
 }
 
-/* Button when mouse is over it */
+
+/* Hover effect */
+
 .button:hover {
     opacity: 0.8;
+}
+
+
+/* Click effect */
+
+.button:active {
+    transform: scale(0.90);
+}
+
+
+/* Responsive design */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .button {
+        width: 58px;
+        height: 58px;
+    }
+
+    .result {
+        font-size: 40px;
+    }
 }
